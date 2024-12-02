@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Fun Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #ffafbd, #ffc3a0);
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #ff6f61;
+        }
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        section p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #fff;
+            background: #ff6f61;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        button:hover {
+            background: #e65a50;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #ff6f61;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Fun Page!</h1>
+    </header>
+    <section>
+        <p>Hello there! This is a random page created for no particular reason. Feel free to explore, click buttons, and enjoy the randomness.</p>
+        <button id="surpriseButton">Click Me for a Surprise!</button>
+        <p id="surpriseText" style="text-align: center; font-weight: bold; display: none;">🎉 You’re Awesome! 🎉</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Random Fun Page. All rights reserved.</p>
+    </footer>
+    <script>
+        const button = document.getElementById('surpriseButton');
+        const text = document.getElementById('surpriseText');
+
+        button.addEventListener('click', () => {
+            text.style.display = 'block';
+        });
+    </script>
+</body>
+</html>
